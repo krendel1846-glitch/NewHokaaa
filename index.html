@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111816">
+  <title>Golden WOK Delivery MVP</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand-mark" id="modeButton" aria-label="Режимы"><img src="assets/golden-wok-logo-160.png" alt=""></button>
+      <div>
+        <strong>Golden WOK</strong>
+        <span id="zoneText">Гродно · зона A · 35-45 мин</span>
+      </div>
+      <button class="icon-button" id="notifyButton" aria-label="Уведомления">!</button>
+    </header>
+
+    <main id="view"></main>
+
+    <nav class="bottom-nav" aria-label="Основная навигация">
+      <button data-tab="home" class="active">Меню</button>
+      <button data-tab="orders">Заказы</button>
+      <button data-tab="loyalty">Бонусы</button>
+      <button data-tab="profile">Профиль</button>
+    </nav>
+  </div>
+
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
